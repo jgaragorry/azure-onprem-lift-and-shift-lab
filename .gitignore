@@ -1,0 +1,133 @@
+#############################
+# General Linux / Bash ignores
+#############################
+
+# Bash history files
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+
+# Shell temporary or backup files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*~
+*.orig
+
+# Output logs
+*.log
+logs/
+log/
+
+# System-generated files
+.DS_Store
+Thumbs.db
+
+
+#############################
+# Azure CLI ignores
+#############################
+
+# Azure credentials and auth tokens
+.azure/
+*.azureToken
+azureProfile.json
+az.sess
+token*.json
+accessTokens.json
+
+# Local env files for Azure scripts
+set_env.sh
+.env
+*.env
+
+# ARM or TF plan/output files (if used in the future)
+*.plan
+*.tfstate
+*.tfstate.backup
+
+
+#############################
+# SSH Keys / Sensitive Data
+#############################
+
+# Private keys
+id_rsa
+id_rsa.pub
+*.pem
+*.key
+
+# SSH config backups
+.ssh/
+ssh_config
+known_hosts
+known_hosts.old
+
+
+#############################
+# Python virtual environments (if added later)
+#############################
+
+venv/
+.env/
+.venv/
+*venv*/
+
+
+#############################
+# VSCode Editor Files
+#############################
+
+.vscode/
+.code-workspace
+
+
+#############################
+# Node / npm (for future expansion)
+#############################
+
+node_modules/
+npm-debug.log
+package-lock.json
+
+
+#############################
+# OS-generated files
+#############################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+#############################
+# Project-specific ignores
+#############################
+
+# Discovery output files
+discovery_onprem_*.txt
+
+# Migration temporary files
+rsync-temp/
+rsync-backup/
+
+# Validation output
+validation_report*.txt
+
+# Lab scripts cache and output
+*.out
+*.cache
+*.pid
+
+# ZIP exports if repository packaged
+*.zip
+
